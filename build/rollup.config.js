@@ -36,11 +36,7 @@ export default {
             include: 'src/**',
             babelHelpers: 'runtime',
         }),
-        nodeResolve({
-          extensions: ['.js'],
-          modulesOnly: true,
-          preferredBuiltins :false
-        }),
+        nodeResolve(),
         terser(),
         json(),
         commonjs(),
@@ -59,6 +55,5 @@ export default {
         'commander',
         'pino',
         'pino-pretty',
-        '@babel/runtime/regenerator',
     ],
 };
