@@ -37,9 +37,9 @@ export default {
             babelHelpers: 'runtime',
         }),
         nodeResolve(),
+        commonjs(),
         terser(),
         json(),
-        commonjs(),
         alias({
             entries: [
                 {

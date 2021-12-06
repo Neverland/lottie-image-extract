@@ -10,7 +10,7 @@ import {writeFileSync} from 'fs';
 
 import log from '@/log';
 
-import createJs from 'lottie-image-extract/src/lib/extract-image/generator-js';
+import createJs from './generator-js';
 
 const BASE64_IMAGE_REG = /^data:image\/\w+/gi;
 const BASE64_IMAGE_EXT = /[^:]\w+\/[\w-+\d.]+(?=;|,)/;
