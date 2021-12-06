@@ -7,6 +7,7 @@
 
 import babel from '@rollup/plugin-babel';
 import {terser} from 'rollup-plugin-terser';
+import json from '@rollup/plugin-json';
 
 export default {
     input: 'src/index.js',
@@ -19,6 +20,7 @@ export default {
 
         },
         exports: 'auto',
+        inlineDynamicImports: true,
     },
     plugins: [
         babel({
@@ -26,9 +28,12 @@ export default {
             include: 'src/**',
             babelHelpers: 'bundled',
         }),
-        terser()
+        terser(),
+        json(),
     ],
     external: [
-        'fs'
+        'fs',
+        'path',
+        'commander',
     ],
 };

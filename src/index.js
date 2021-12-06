@@ -6,7 +6,24 @@
  */
 
 import fs from 'fs';
+import path from 'path';
 
-export default function () {
-    console.log(fs);
+import {program} from 'commander';
+
+import {version} from '../package.json';
+
+program.version(version);
+program.parse(process.argv);
+
+program
+    .command('extract')
+    .option('-f, --file <stirng>', 'Lottie json file path.')
+    .description('Extract base64 image from json file.')
+    .alias('e')
+    .action(() => {
+        import('./lib/extract-image.js');
+    });;
+
+if (!program.args.length) {
+    program.help();
 }

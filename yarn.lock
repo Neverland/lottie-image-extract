@@ -941,7 +941,14 @@
     "@babel/helper-module-imports" "^7.10.4"
     "@rollup/pluginutils" "^3.1.0"
 
-"@rollup/pluginutils@^3.1.0":
+"@rollup/plugin-json@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-json/-/plugin-json-4.1.0.tgz#54e09867ae6963c593844d8bd7a9c718294496f3"
+  integrity sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
+  dependencies:
+    "@rollup/pluginutils" "^3.0.8"
+
+"@rollup/pluginutils@^3.0.8", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
   integrity sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
@@ -1270,14 +1277,6 @@ colorette@^2.0.16:
   version "2.0.16"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.16.tgz#713b9af84fdb000139f04546bd4a93f62a5085da"
   integrity sha512-hUewv7oMjCp+wkBv5Rm0v87eJhq4woh5rSR+42YSQJKecCqgIqNkZ6lAlQms/BwHPJA5NKMRlpxPRv0n8HQW6g==
-
-command@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/command/-/command-0.0.5.tgz#a2f986a7368e24de2374b4a390541d2d48e7ecba"
-  integrity sha1-ovmGpzaOJN4jdLSjkFQdLUjn7Lo=
-  dependencies:
-    merge-recursive "0.0.3"
-    which "1.0.5"
 
 commander@^2.20.0:
   version "2.20.3"
@@ -2134,11 +2133,6 @@ magic-string@^0.25.2:
   dependencies:
     sourcemap-codec "^1.4.4"
 
-merge-recursive@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/merge-recursive/-/merge-recursive-0.0.3.tgz#de7901efcaecc906d8cab2ad1e9c470f5a3dae84"
-  integrity sha1-3nkB78rsyQbYyrKtHpxHD1o9roQ=
-
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
@@ -2858,11 +2852,6 @@ which-boxed-primitive@^1.0.2:
     is-number-object "^1.0.4"
     is-string "^1.0.5"
     is-symbol "^1.0.3"
-
-which@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/which/-/which-1.0.5.tgz#5630d6819dda692f1464462e7956cb42c0842739"
-  integrity sha1-VjDWgZ3aaS8UZEYueVbLQsCEJzk=
 
 which@^2.0.1:
   version "2.0.2"
