@@ -19,6 +19,8 @@ export default function load(filePath, fileName) {
     }
     catch (e) {
         log.error(e.message);
+
+        return false;
     }
 
     log.info(`'${fileName}', load successfully!`);
