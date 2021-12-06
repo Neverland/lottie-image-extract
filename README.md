@@ -19,6 +19,7 @@ dir
     |_ a.json (lottie)
 
 ### after
+    |_ a.json
     |_ a.json.lottie.js
     |_ a.json.0.png
     |_ a.json.1.png
