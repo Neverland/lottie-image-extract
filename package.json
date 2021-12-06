@@ -1,6 +1,6 @@
 {
   "name": "lottie-image-extract",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Extract image from lottie JSON file.",
   "bin": {
     "lit-tool": "./dist/index.js"
